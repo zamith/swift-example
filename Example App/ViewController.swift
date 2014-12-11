@@ -11,12 +11,15 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var myLabel: UILabel!
+
+    
+    @IBAction func buttonPressed(sender: AnyObject) {
+        println("Hello World!")
+        myLabel.text = "It works!"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        println("Hello World!")
-        
-        myLabel.text = "It works!"
     }
 
     override func didReceiveMemoryWarning() {
